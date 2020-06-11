@@ -2,10 +2,10 @@ public class Shape {
     public ShapeType ShapeType { get; set; }
     public Color Color { get; set; }
     public int Quantity { get; set; }
-    public ShapeCost Cost { get; set; }
+    public Cost Cost { get; set; }
 
 
-    public Shape(ShapeType st, Color c, int q, ShapeCost cost)
+    public Shape(ShapeType st, Color c, int q, Cost cost)
     {
         Color = c;
         Quantity = q;
@@ -15,6 +15,6 @@ public class Shape {
 }
 public enum Color { Red, Blue, Yellow}
 
-public enum ShapeCost { Square = 1, Triangle = 2, Circle = 3 }
+public enum Cost { Square = 1, Triangle = 2, Circle = 3, Red = 1 }
 
 public enum ShapeType { Circle, Square, Triangle}

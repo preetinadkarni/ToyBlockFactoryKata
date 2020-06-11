@@ -14,43 +14,43 @@ namespace ToyBlockFactory
             ShowBlankLine();
 
             int redSquareQty = GetOrder("Red Square");
-            Shape redSquare = new Shape(ShapeType.Square, Color.Red, redSquareQty, ShapeCost.Square);
+            Shape redSquare = new Shape(ShapeType.Square, Color.Red, redSquareQty, Cost.Square);
             order.blocks.Add(redSquare);
 
             int blueSquareQty = GetOrder("Blue Square");
-            Shape blueSquare = new Shape(ShapeType.Square, Color.Blue, blueSquareQty, ShapeCost.Square);
+            Shape blueSquare = new Shape(ShapeType.Square, Color.Blue, blueSquareQty, Cost.Square);
             order.blocks.Add(blueSquare);
 
             int yellowSquareQty = GetOrder("Yellow Square");
-            Shape yellowSquare = new Shape(ShapeType.Square, Color.Yellow, yellowSquareQty, ShapeCost.Square);
+            Shape yellowSquare = new Shape(ShapeType.Square, Color.Yellow, yellowSquareQty, Cost.Square);
             order.blocks.Add(yellowSquare);
 
             ShowBlankLine();
 
             int redTriangleQty = GetOrder("Red Triangle");
-            Shape redTriangle = new Shape(ShapeType.Triangle, Color.Red, redTriangleQty, ShapeCost.Triangle);
+            Shape redTriangle = new Shape(ShapeType.Triangle, Color.Red, redTriangleQty, Cost.Triangle);
             order.blocks.Add(redTriangle);
 
             int blueTriangleQty = GetOrder("Blue Triangle");
-            Shape blueTriangle = new Shape(ShapeType.Triangle, Color.Blue, blueTriangleQty, ShapeCost.Triangle);
+            Shape blueTriangle = new Shape(ShapeType.Triangle, Color.Blue, blueTriangleQty, Cost.Triangle);
             order.blocks.Add(blueTriangle);
 
             int yellowTriangleQty = GetOrder("Yellow Triangle");
-            Shape yellowTriangle = new Shape(ShapeType.Triangle, Color.Yellow, yellowTriangleQty, ShapeCost.Triangle);
+            Shape yellowTriangle = new Shape(ShapeType.Triangle, Color.Yellow, yellowTriangleQty, Cost.Triangle);
             order.blocks.Add(yellowTriangle);
 
             ShowBlankLine();
 
             int redCircleQty = GetOrder("Red Circle");
-            Shape redCircle = new Shape(ShapeType.Circle, Color.Red, redCircleQty, ShapeCost.Circle);
+            Shape redCircle = new Shape(ShapeType.Circle, Color.Red, redCircleQty, Cost.Circle);
             order.blocks.Add(redCircle);
 
             int blueCircleQty = GetOrder("Blue Circle");
-            Shape blueCircle = new Shape(ShapeType.Circle, Color.Blue, blueCircleQty, ShapeCost.Circle);
+            Shape blueCircle = new Shape(ShapeType.Circle, Color.Blue, blueCircleQty, Cost.Circle);
             order.blocks.Add(blueCircle);
 
             int yellowCircleQty = GetOrder("Yellow Circle");
-            Shape yellowCircle = new Shape(ShapeType.Circle, Color.Yellow, yellowCircleQty, ShapeCost.Circle);
+            Shape yellowCircle = new Shape(ShapeType.Circle, Color.Yellow, yellowCircleQty, Cost.Circle);
             order.blocks.Add(yellowCircle);
 
             ShowBlankLine();
@@ -58,6 +58,7 @@ namespace ToyBlockFactory
 
             order.GenerateInvoiceReport();
             order.GenerateCuttingListReport();
+            order.GeneratePaintingReport();
 
         }
 
