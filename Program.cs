@@ -56,6 +56,7 @@ namespace ToyBlockFactory
             ShowBlankLine();
             ShowEndMessage();
 
+            order.GenerateInvoiceReport();
             order.GenerateCuttingListReport();
 
         }
