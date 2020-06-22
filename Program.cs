@@ -62,33 +62,33 @@ namespace ToyBlockFactory
 
         }
 
-        public static void ShowWelcome()
+        private static void ShowWelcome()
         {
             Console.WriteLine("~~~");
             Console.WriteLine("Welcome to the Toy Block Factory!\n");
         }
 
-        public static string GetCustomerName()
+        private static string GetCustomerName()
         {
             Console.Write("Please input your Name: ");
             string name = Console.ReadLine();
             return name;
         }
-        public static string GetCustomerAddress()
+        private static string GetCustomerAddress()
         {
             Console.Write("Please input your Address: ");
             string address = Console.ReadLine();
             return address;
         }
 
-        public static string GetDueDate()
+        private static string GetDueDate()
         {
             Console.Write("Please input your Due Date: ");
             string dueDate = Console.ReadLine();
             return dueDate;
         }
 
-        public static int GetOrder(string shape)
+        private static int GetOrder(string shape)
         {
             int qty = 0,q;
             Console.Write($"Please input the number of {shape}: ");
@@ -99,12 +99,12 @@ namespace ToyBlockFactory
             return qty;
         }
 
-        public static void ShowBlankLine()
+        private static void ShowBlankLine()
         {
             Console.WriteLine("");
         }
 
-        public static void ShowEndMessage()
+        private static void ShowEndMessage()
         {
             Console.WriteLine("~~~");
         }

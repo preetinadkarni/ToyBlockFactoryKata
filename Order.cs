@@ -57,7 +57,7 @@ public class Order
         PrintReportHeaderFooter();
 
     }
-    public void PrintOrderSummary()
+    private void PrintOrderSummary()
     {
         Console.WriteLine("|          | Red | Blue | Yellow |");
         Console.WriteLine("|----------|-----|------|--------|");
@@ -76,7 +76,7 @@ public class Order
         Console.WriteLine("");
     }
 
-    public void PrintReportHeaderFooter()
+    private void PrintReportHeaderFooter()
     {
         Console.WriteLine("\n~~~");
     }
