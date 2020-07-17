@@ -6,10 +6,15 @@ namespace ToyBlockFactory
     {
         public static void Main()
         {
-            Order order = new Order();
+  
+           
             ShowWelcome();
-            order.CustomerName = GetCustomerName();
-            order.CustomerAddress = GetCustomerAddress();
+
+            string customerName = GetCustomerName();
+            string customerAddress = GetCustomerAddress();
+            Customer customer = new Customer(customerName, customerAddress);
+
+            Order order = new Order(customer);
             order.DueDate = GetDueDate();
             ShowBlankLine();
 
@@ -56,9 +61,9 @@ namespace ToyBlockFactory
             ShowBlankLine();
             ShowEndMessage();
 
-            order.GenerateInvoiceReport();
-            order.GenerateCuttingListReport();
-            order.GeneratePaintingReport();
+            PrintReport.GenerateInvoiceReport(order);
+            PrintReport.GenerateCuttingListReport(order);
+            PrintReport.GeneratePaintingReport(order);
 
         }
 
